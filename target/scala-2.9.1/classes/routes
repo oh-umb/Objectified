@@ -1,0 +1,42 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+# Content
+GET  /		 controllers.ObjMf.index
+GET  /pitch	 controllers.ObjMf.index
+GET  /blatherbridge controllers.ObjMf.blathe
+
+# Fishing for Niches/War Room
+GET /warroom controllers.WarRoom.index
+
+# Products and Services
+GET /workshop controllers.WorkShop.index
+
+# Initiatives, events, and resources
+GET /communitycentre 	controllers.CommunityCentre.index
+GET /communitycentre 	controllers.CommunityCentre.pulpit
+GET /communitycentre 	controllers.CommunityCentre.events
+GET /communitycentre 	controllers.CommunityCentre.resources
+
+# Roster
+GET /roster 	controllers.Roster.index
+
+# make things
+GET	  /studio             	controllers.Studio.index
+GET   /studio/make		controllers.Studio.make
+POST /studio/keep		controllers.Studio.keep
+GET   /studio/list     		controllers.Studio.list
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public", file)
+
+
+
+
+#GET  /rip		 controllers.ObjMf.rip
+#GET  /render	 controllers.ObjMf.render
+#GET  /tweak	 controllers.ObjMf.tweak
+#GET  /sculpt	 controllers.ObjMf.sculpt
+#GET /roster	 controllers.ObjMf.roster
+#GET  /fishing	 controllers.ObjMf.fishing
+#GET  /lab		 controllers.ObjMf.lab

@@ -1,0 +1,16 @@
+@(form: play.api.data.Form[String])
+ 
+@main("Welcome to Play 2.0") {
+   <div class="row-fluid">	    
+      <div class="leaderboard">
+         <div class="logo">Objectified 
+	        <span class="subtext">thing design & minifacturing</span>
+	     </div>
+         <div>
+             <h3>Welcome to our  Studio. Not much to speak of at the moment but it will get better</h3>
+            <script src="@routes.Assets.at("javascripts/index.js")" type="text/javascript"></script>
+            <ul id="things"></ul>
+            <a href="studio/make">Make a Thing</a>
+        </div>
+     </div>  
+}

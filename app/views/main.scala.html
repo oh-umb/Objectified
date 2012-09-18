@@ -1,0 +1,28 @@
+@(title: String)(content: Html)
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>@title</title>
+    <link rel="stylesheet" href="@routes.Assets.at("bootstrap/css/bootstrap.css")">
+    <link rel="stylesheet" href="@routes.Assets.at("bootstrap/css/fluid-layout.css")">
+    <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
+    <script src="@routes.Assets.at("javascripts/jquery-1.7.1.min.js")" type="text/javascript"></script>
+  </head>
+  <body>
+	<div class="container-fluid">
+      @content
+    </div>
+    <div class="nav pull-right navbar-fixed-bottom">
+      <a href="/pitch">pitch</a> - 
+      <a href="/warroom">fishing for niches</a> - 
+      <a href="/workshop">products and services</a> -
+      <a href="/communitycentre">initiatives, events, and resources</a> - 
+	  <a href="/roster">roster and makesmanship</a> -
+	  <a href="/studio">eye candy</a> - 
+	  <a href="/blatherbridge">blather bridge</a> - 
+	  
+	</div>
+  </body>
+</html>
